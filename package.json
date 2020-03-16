@@ -1,0 +1,23 @@
+{
+  "name": "personal_webpage2",
+  "version": "1.0.0",
+  "description": "my (more professional) personal webpage",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmorris65/Personal_Webpage2.git"
+  },
+  "author": "Jalil Morris",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmorris65/Personal_Webpage2/issues"
+  },
+  "homepage": "https://github.com/jmorris65/Personal_Webpage2#readme",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1"
+  }
+}
