@@ -7,6 +7,45 @@ body {
 	background-image: radial-gradient(white, #2db3b0); 
 }
 
+button {
+	font-size: 1.5em;
+	font-weight: 200;
+	color: white;
+	width: 100%;
+	height: 100%;
+	border: none;
+	border-top: 1px solid blue;
+	border-radius: 5px 5px 0 0;
+	outline: none;
+	background-image: linear-gradient(to bottom left, #2c41a8, white);
+	box-shadow: 2px -3px 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+#image img, .imgtitle img {
+	border: 4px solid white;
+	box-shadow: 2px 2px 3px 2px gray;
+	margin-left: 12%;
+}
+
+#about h1 {
+	color: #2c41a8;
+	font-weight: 300;
+	text-align: center;
+	margin: 0;
+	letter-spacing: 2px;
+}
+
+ul {
+	list-style: none;
+	padding: 0 5% 0 2%;
+}
+
+li {
+	margin-top: 2%;
+	text-align: justify;
+	color: #333333;
+}
+
 #navbar {
 	width: 60%;
 	margin: 0 auto;
@@ -26,19 +65,6 @@ body {
 	color: #2c41a8;
 }
 
-button {
-	font-size: 1.5em;
-	font-weight: 200;
-	color: white;
-	width: 100%;
-	height: 100%;
-	border: none;
-	border-top: 1px solid blue;
-	border-radius: 5px 5px 0 0;
-	outline: none;
-	background-image: linear-gradient(to bottom left, #2c41a8, white);
-	box-shadow: 2px -3px 2px 2px rgba(0, 0, 0, 0.2);
-}
 
 #main {
 	margin: 0 auto;
@@ -67,11 +93,49 @@ button {
 }
 
 #two {
-	display: none
+	display: none;
+	opacity: 0;
+	padding-top: 2%;
 }
 
-#three {
-	display: none
+.inTwo {
+	height: 48%;
+	width: 100%;
+}
+
+.inTop {
+	margin: 1% 4%;
+	width: 42%;
+	height: 100%;
+	float: left;
+}
+
+.description {
+	height: 45%;
+	width: 100%;
+	float: left;
+	border-bottom: 4px double #2c41a8;
+}
+
+.imgtitle {
+	height: 50%;
+	width: 49%;
+	float: left;
+}
+
+.imgtitle img {
+	margin: 0;
+}
+
+.imgtitle h2 {
+	color: #2c41a8;
+	text-align: center;
+}
+
+#botInter {
+	margin: 0 auto;
+	width: 42%;
+	height: 100%;
 }
 
 #image {
@@ -81,16 +145,14 @@ button {
 	float: left;
 }
 
-img {
-	border: 4px solid white;
-	box-shadow: 2px 2px 2px 2px gray;
-	margin-left: 12%;
-}
-
 #information {
 	height: 50%;
 	width: 90%;
 	padding: 5%;
+}
+
+#information p {
+	margin: 2px 0;
 }
 
 #about {
@@ -102,17 +164,47 @@ img {
 	border-radius: 10px;
 }
 
-h1 {
-	color: #2c41a8;
-	font-weight: 300;
-	text-align: center;
-	margin: 0;
-	letter-spacing: 2px;
-}
-
-p {
+#about p {
 	color: #232424;
 	text-align: justify;
 	padding: 0 5%;
 	line-height: 30px;
+}
+
+#three {
+	display: none;
+	padding-top: 0;
+	opacity: 0;
+}
+
+.stack {
+	display: grid;
+	width: 33%;
+	height: 47%;
+	float: left;
+}
+
+.stack > * {
+	grid-column: 1;
+	grid-row: 1;
+	padding: 19%;
+	height: 60%;
+	width: 60%;
+}
+
+.stack > * h2 {
+	font-size: 1.6em;
+	height: 30%;
+	padding: 35% 0;
+	text-align: center;
+	margin: 0;
+}
+
+.stack > * img {
+	background-color: white;
+}
+
+.stack > * h2 div {
+	font-weight: 200;
+	color: red;
 }
